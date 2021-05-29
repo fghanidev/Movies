@@ -134,13 +134,9 @@ extension MovieListViewController: UITableViewDataSource {
             fatalError("Unable to dequeue CarTableViewCell.")
         }
         cell.config(movie: fetchedResultController!.object(at: indexPath))
-//        cell.accessibilityIdentifier = String(format: "carTableViewCell_%ld_%ld", indexPath.section, indexPath.row)
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 170.0
-    }
 }
 
 extension MovieListViewController: UITableViewDelegate {
